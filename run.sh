@@ -84,6 +84,11 @@ if [[ "$CURRENT_STATE" -lt 3 ]]; then
     print_success "The database will be created automatically on first run."
 fi
 
+# Always refresh dependencies on each run to ensure required packages are present
+print_header "--- Refreshing Python Dependencies ---"
+source "$VENV_DIR/bin/activate"
+pip install --no-cache-dir -r "$REQUIREMENTS_FILE"
+
 SERVICE_CREATED=false
 if [[ "$(uname)" == "Linux" ]] && command -v systemctl &>/dev/null && [[ ! -f "/etc/systemd/system/ollama_proxy.service" ]]; then
     print_header "--- Optional: Create a Systemd Service ---"
