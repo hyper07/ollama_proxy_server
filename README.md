@@ -148,6 +148,8 @@ The User Management page gives you a sortable, high-level overview. From here, c
 ### Step 6: Test & Benchmark in the Playgrounds
 
 Use the built-in playgrounds to evaluate your models. The **Chat Playground** provides a familiar UI to test conversational models with streaming and image support. The **Embedding Playground** lets you visualize and benchmark how different models understand semantic relationships using powerful 2D plots.
+![User edit](assets/embedding.gif)
+![User edit](assets/benchmark.gif)
 
 ### Step 7: Master Your Analytics
 

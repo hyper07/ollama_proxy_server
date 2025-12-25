@@ -305,7 +305,21 @@ async def get_servers_with_model(db: AsyncSession, model_name: str) -> list[Olla
 
 def is_embedding_model(model_name: str) -> bool:
     """Heuristically determines if a model is for embeddings."""
-    return "embed" in model_name.lower()
+    name = model_name.lower()
+    # Cover common embedding model families beyond simple "embed" substring
+    keywords = (
+        "embed",
+        "text-embedding",
+        "bge",
+        "gte",
+        "e5",
+        "sbert",
+        "mpnet",
+        "instructor",
+        "mxbai",
+        "all-minilm",
+    )
+    return any(key in name for key in keywords)
 
 async def get_all_available_model_names(db: AsyncSession, filter_type: Optional[str] = None) -> List[str]:
     """
