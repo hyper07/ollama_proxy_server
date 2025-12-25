@@ -5,7 +5,7 @@ description = "A secure, high-performance FastAPI-based proxy and load balancer 
 authors = ["ParisNeo <parisneo_ai@gmail.com>"]
 license = "Apache-2.0"
 readme = "README.md"
-repository = "https://github.com/ParisNeo/ollama_proxy_server"
+repository = "https://github.com/hyper07/ollama_proxy_server"
 
 [tool.poetry.dependencies]
 python = "^3.11"

@@ -6,6 +6,8 @@
 ![Release](https://img.shields.io/badge/release-v9.0.0-blue)
 [![GitHub stars](https://img.shields.io/github/stars/hyper07/ollama_proxy_server.svg?style=social&label=Star)](https://github.com/hyper07/ollama_proxy_server/stargazers/)
 
+Forked from [ParisNeo/ollama_proxy_server](https://github.com/ParisNeo/ollama_proxy_server).
+
 Stop exposing your local AI to the world. **Ollama Proxy Fortress** is the ultimate security and management layer for your Ollama instances, designed to be set up in **60 seconds** by anyone, on any operating system.
 
 Whether you're a developer, a researcher, or just an AI enthusiast, this tool transforms your vulnerable open port into a managed, secure, and **deeply customizable** AI command center.
@@ -91,7 +93,7 @@ A server restart is required to apply changes, ensuring your connection is fully
 Download the source code from the repository, either by using `git` or by downloading the ZIP file and extracting it.
 
 ```bash
-git clone https://github.com/ParisNeo/ollama_proxy_server.git
+git clone https://github.com/hyper07/ollama_proxy_server.git
 cd ollama_proxy_server
 ```
 
@@ -216,7 +218,7 @@ This application was developed with passion by the open-source community. A spec
 *   All contributors who have helped find and fix bugs.
 *   The teams behind **FastAPI**, **SQLAlchemy**, **Jinja2**, **Chart.js**, and **Tailwind CSS**.
 
-Visit the project on [GitHub](https://github.com/ParisNeo/ollama_proxy_server) to contribute, report issues, or star the repository!
+Visit the project on [GitHub](https://github.com/hyper07/ollama_proxy_server) to contribute, report issues, or star the repository!
 
 ---
 
